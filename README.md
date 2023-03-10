@@ -44,19 +44,24 @@ configuration signals
 
 
 ![Screenshot (1914)](https://user-images.githubusercontent.com/71934919/224428533-6170b131-0a74-47c4-8d9f-1b59a5072430.png)
+
 #Control signals
-These signals are used for clock generation and data transfer synchronization. The camera 
-clock must be provided according to the camera specification.
+
+These signals are used for clock generation and data transfer synchronization. The camera clock must be provided according to the camera specification.
+
 The camera also provides data synchronization signals:
 • HSYNC, used for line synchronization
 • VSYNC, used for frame synchronization.
+
 #Image data signals
 Each of these signals transmits a bit of the image data. The image data signals width 
 represents the number of bits to be transferred at each pixel clock. This number depends on 
 the parallel interface of the camera module and on the embedded system interface.
+
 #Power supply signals
 As any embedded electronic system, the camera module needs to have a power supply. 
 The operating voltage of the camera module is specified in its datasheet.
+
 #Configuration signals
 These signals are used to:
 • configure the appropriate image features such as resolution, format and frame rate
